@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-2"></div>
+            <div class="col col-12 col-sm-8">
+                <form action="/format" method="POST">
+                    <table class="table">
+                        <tr><h1>Result Analysis </h1></tr>                        
+                        <tr><input type="text" name="filename"  class="form-control" readonly value=<%=filename%> ></tr>
+                        <tr>
+                            <td>
+                                <div class="form-group"> 
+                                    <label for="branch">Branch</label>                                  
+                                    <select class="form-control" id="branch" name="branch">
+                                      <option>IT</option>
+                                      <option>CS</option>
+                                      <option>ME</option>
+                                      <option>CE</option>
+                                      <option>EC</option>
+                                      <option>EE</option>
+                                      <option>OverAllCollege</option>
+                                    </select>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">   
+                                    <label for="yoa">Year of Admission:</label>                                
+                                    <select class="form-control" id="yoa" name="yeo">
+                                      <option>2015</option>
+                                      <option>2016</option>
+                                      <option>2017</option>
+                                      <option>2018</option>
+                                      <option>2019</option>
+                                      <option>2020</option>
+                                    </select>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">   
+                                    <label for="format">Format for</label>                                
+                                    <select class="form-control" id="format" name="format">
+                                      <option>Director</option>
+                                      <option>Principal</option>
+                                      <option>HOD</option>                                      
+                                    </select>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td><button type="submit" class="btn btn-primary">Submit</button></td>
+                        </tr>
+    
+                    </table>
+                </form>           
+            </div>
+            <div class="col col-12 col-sm-2"></div>     
+         </div>
+    </div>
+
+    
+</body>
+</html>

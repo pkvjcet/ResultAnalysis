@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-2"></div>
+            <div class="col col-12 col-sm-8">
+                <h1><%= title %></h1>
+                <table class="table">
+                    <tr>
+                        <td>Total Appeard</td>
+                        <td><%= ta %></td>
+                    </tr>
+                    <tr>
+                        <td>Total Passed</td>
+                        <td><%= tp %></td>
+                    </tr>
+                    <tr>
+                        <td>Pass %</td>
+                        <td><%= pp %></td>
+                    </tr>
+                </table>
+                <h1>SubjectWise</h1>
+                <table class="table">
+                   <tr>
+                       <th>SI No</th>
+                       <th>Subject Name</th>
+                       <th>Total Students</th>
+                       <th>No of Pass</th>
+                       <th>Pass Percentage</th>
+                   </tr>
+
+                   <% for(var i=0; i<ts; i++) {%>
+
+                    <tr>
+                        <td> <%= i+1 %> </td>                        
+                        <td> <%= sns[i] %> </td>
+                        <td><%= tss[i] %> </td>
+                        <td><%= sp[i] %> </td>
+                        <td> <%= spp[i] %> </td>
+                    </tr>
+                    
+                    <% } %>
+                   
+
+                </table>
+                
+            </div>
+            <div class="col col-12 col-sm-2"></div>     
+         </div>
+    </div>
+
+    
+</body>
+</html>
